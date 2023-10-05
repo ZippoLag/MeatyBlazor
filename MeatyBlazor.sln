@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeatyBlazor", "MeatyBlazor\MeatyBlazor.csproj", "{EF49138C-CF5A-4B54-8556-D721EF56E704}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeatyBlazorTest", "MeatyBlazorTest\MeatyBlazorTest.csproj", "{CF93300B-4A5E-4B10-A360-7EC0F091D5DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EF49138C-CF5A-4B54-8556-D721EF56E704}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF49138C-CF5A-4B54-8556-D721EF56E704}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF49138C-CF5A-4B54-8556-D721EF56E704}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF93300B-4A5E-4B10-A360-7EC0F091D5DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF93300B-4A5E-4B10-A360-7EC0F091D5DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF93300B-4A5E-4B10-A360-7EC0F091D5DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF93300B-4A5E-4B10-A360-7EC0F091D5DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
