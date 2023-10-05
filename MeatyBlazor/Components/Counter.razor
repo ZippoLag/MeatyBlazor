@@ -1,5 +1,6 @@
-﻿<button onclick="@(() => {count++;})">@count</button>
+﻿<button onclick="@(() => {Count++;})">@Count</button>
 
 @code{
-	int count = 0;
+	[Parameter]
+	public int Count { get; set; } = 0;
 }

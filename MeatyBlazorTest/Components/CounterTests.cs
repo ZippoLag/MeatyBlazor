@@ -4,27 +4,38 @@ namespace MeatyBlazorTest.Components;
 
 public class CounterTests : TestContext
 {
-	[Fact]
-	public void Counter_StartsWith_0()
-	{
-		// Arrange
-		var cut = RenderComponent<Counter>();
+    [Fact]
+    public void Counter_StartsWith_0_ByDefault()
+    {
+        // Arrange
+        var cut = RenderComponent<Counter>();
 
-		// Assert
-		Assert.Contains("0", cut.Markup);
-	}
+        // Assert
+        Assert.Contains("0", cut.Markup);
+    }
 
-	[Fact]
-	public void Counter_IsIncremented_By1_WhenClicked()
-	{
-		// Arrange
-		var cut = RenderComponent<Counter>();
+    [Fact]
+    public void Counter_StartsWith_GivenCountParameter()
+    {
+        // Arrange
+        int startValue = 3;
+        var cut = RenderComponent<Counter>(parameters => parameters.Add(p => p.Count, startValue));
 
-		// Act
-		var buttonElement = cut.Find("button");
-		buttonElement.Click();
+        // Assert
+        Assert.Contains(startValue.ToString(), cut.Markup);
+    }
 
-		// Assert
-		Assert.Contains("1", cut.Markup);
-	}
+    [Fact]
+    public void Counter_IsIncremented_By1_WhenClicked()
+    {
+        // Arrange
+        var cut = RenderComponent<Counter>();
+
+        // Act
+        var buttonElement = cut.Find("button");
+        buttonElement.Click();
+
+        // Assert
+        Assert.Contains("1", cut.Markup);
+    }
 }
