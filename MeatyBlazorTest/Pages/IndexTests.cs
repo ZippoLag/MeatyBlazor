@@ -32,7 +32,7 @@ public class CounterTests : TestContext
 	[Fact]
 	public void Index_AddCounterButton_AddsNewCounter_WhenClicked()
 	{
-		// Arrange & Act
+		// Arrange
 		var cut = RenderComponent<Index>();
 
 		// Act
@@ -42,5 +42,42 @@ public class CounterTests : TestContext
 		// Assert
 		var counterList = cut.Find(".counter-list");
 		Assert.True(counterList.HasChildNodes);
+	}
+
+	[Fact]
+	public void Index_CounterList_ButtonValueMatches_AfterIncrementing()
+	{
+		// Arrange
+		var cut = RenderComponent<Index>();
+
+		var addCounterButton = cut.Find(".add-counter");
+		addCounterButton.Click();
+
+		var firstCounter = cut.FindAll("li > button")[0];
+		firstCounter.Click();
+		firstCounter = cut.FindAll("li > button")[0];
+
+		// Assert
+		Assert.Contains("1", firstCounter.TextContent);
+	}
+
+	[Fact]
+	public void Index_CounterList_ButtonValuesMatch_WhenCounterIsAdded_AfterIncrementingAnother()
+	{
+		// Arrange
+		var cut = RenderComponent<Index>();
+
+		var addCounterButton = cut.Find(".add-counter");
+		addCounterButton.Click();
+
+		var firstCounter = cut.FindAll("li > button")[0];
+		firstCounter.Click();
+
+		// Act
+		addCounterButton.Click();
+
+		// Assert
+		firstCounter = cut.FindAll("li > button")[0];
+		Assert.Contains("1", firstCounter.TextContent);
 	}
 }

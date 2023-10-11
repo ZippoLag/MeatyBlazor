@@ -5,9 +5,11 @@
 <button @onclick="addCounter" class="add-counter">+</button>
 
 <ul class="counter-list">
-	@foreach(int counter in counters)
+	@for(int index=0; index<counters.Count(); index++)
 	{
-		<li><Counter Count="@counter" /></li>
+		var enclosedIndex = index;
+
+		<li><Counter Count="@counters[index]" CountChanged="@((newCount) => counterCountChangedHandler(enclosedIndex, newCount))" /></li>
 	}
 </ul>
 
@@ -18,6 +20,11 @@
 	private void addCounter()
 	{
 		counters.Add(0);
+	}
+
+	private void counterCountChangedHandler(int index, int newCount)
+	{
+		counters[index] = newCount;
 	}
 }
 
