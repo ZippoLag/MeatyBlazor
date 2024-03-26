@@ -7,10 +7,9 @@ The purpose of this repo is merely giving an overview of a few core features of 
 This document will try and provide an outline (recipe?!) of what we'll be adding on the next commit, and a brief changelog of what was added on the previous.
 
 ## Changelog
-- Added .gitignore, .gitattributes and readme.md
+- Create a new project
 
 
 ## Next steps
-- Create a new project
 - Wipeout "hello world" and turn it into a boilerplate project
 - Add Unit Test project and coverage for exisitng MainLayout and Index pages
