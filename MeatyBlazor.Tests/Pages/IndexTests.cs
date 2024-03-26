@@ -1,6 +1,6 @@
-﻿using Index = MeatyBlazor.Pages.Index;
+﻿namespace MeatyBlazorTest.Pages;
 
-namespace MeatyBlazorTest.Pages;
+using Index = MeatyBlazor.Pages.Index;
 
 public class IndexTests : TestContext
 {

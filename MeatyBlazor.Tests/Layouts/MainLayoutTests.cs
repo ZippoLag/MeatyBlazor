@@ -1,4 +1,6 @@
-namespace MeatyBlazor.Tests;
+namespace MeatyBlazor.Tests.Layouts;
+
+using MeatyBlazor.Layouts;
 
 public class MainLayoutTests : TestContext
 {
