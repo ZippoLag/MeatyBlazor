@@ -1,16 +1,14 @@
-# MeatyBlazor - Demo I - "mise en place"
+# MeatyBlazor - Slides
 
-Welcome to the repository for the "Blazor: Straight to the meat" webinar!
+This branch is for holding the latest version of the Slides in PDF format so you can easily go through this if you ever need to.
 
-The purpose of this repo is merely giving an overview of a few core features of Blazor and how to avoid a few common pitfalls that you may find as you begin your journey with this framework.
+Chances are you're just looking for the resource links, so here they are:
 
-This document will try and provide an outline (recipe?!) of what we'll be adding on the next commit, and a brief changelog of what was added on the previous.
-
-## Changelog
-- Added .gitignore, .gitattributes and readme.md
-
-
-## Next steps
-- Create a new project
-- Wipeout "hello world" and turn it into a boilerplate project
-- Add Unit Test project and coverage for exisitng MainLayout and Index pages
+- Component Lifecycle docs https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle
+- Microsoft Blazor Learning Path https://learn.microsoft.com/en-us/training/paths/build-web-apps-with-blazor
+- Blazor University https://blazor-university.com (simple, practical guide to get started)
+- Blazor School https://blazorschool.com (more detailed tutorial with emphasis on Server VS WebAssembly)
+- Blazor MAUI https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/blazorwebview
+- .Net 8 Full-Stack news https://www.youtube.com/watch?v=0MBeYc9qcWY
+- Blazor PWA https://learn.microsoft.com/en-us/aspnet/core/blazor/progressive-web-app
+- Blazor SignalR Chat example https://learn.microsoft.com/en-us/aspnet/core/blazor/tutorials/signalr-blazor
