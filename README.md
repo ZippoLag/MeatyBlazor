@@ -12,3 +12,6 @@ Chances are you're just looking for the resource links, so here they are:
 - .Net 8 Full-Stack news https://www.youtube.com/watch?v=0MBeYc9qcWY
 - Blazor PWA https://learn.microsoft.com/en-us/aspnet/core/blazor/progressive-web-app
 - Blazor SignalR Chat example https://learn.microsoft.com/en-us/aspnet/core/blazor/tutorials/signalr-blazor
+
+Take a look at the other branches for demo code
+https://github.com/ZippoLag/MeatyBlazor/branches
