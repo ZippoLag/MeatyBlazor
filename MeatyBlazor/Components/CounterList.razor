@@ -1,0 +1,20 @@
+﻿<div class="counterlist">
+    <button @onclick="onAddButtonClickHandler">+</button>
+    <ul>
+        @for(int i=0; i<countersCount; i++)
+        {
+            <li>
+                <Counter></Counter>
+            </li>
+        }
+    </ul>
+</div>
+
+@code{
+    int countersCount = 0;
+
+    private void onAddButtonClickHandler()
+    {
+        countersCount++;
+    }
+}

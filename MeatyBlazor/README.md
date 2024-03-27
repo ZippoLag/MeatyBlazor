@@ -7,9 +7,9 @@ The purpose of this repo is merely giving an overview of a few core features of 
 This document will try and provide an outline (recipe?!) of what we'll be adding on the next commit, and a brief changelog of what was added on the previous.
 
 ## Changelog
-- Counter component: refactored
+- CounterList: another TDD example
 
 
 ## Next steps
-- Implement Counter list component
+- Demo III
 
