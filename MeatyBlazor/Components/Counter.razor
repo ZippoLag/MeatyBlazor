@@ -1,0 +1,9 @@
+﻿<button onclick="@(async () => {Count++; await CountChanged.InvokeAsync(Count);})">@Count</button>
+
+@code{
+    [Parameter]
+    public int Count { get; set; } = 0;
+
+    [Parameter]
+    public EventCallback<int> CountChanged { get; set; }
+}
