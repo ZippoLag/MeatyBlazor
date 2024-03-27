@@ -9,20 +9,4 @@
             </li>
         }
     </ul>
-    <div>Total: @total</div>
 </div>
-
-@code{
-    int total => countersCounts.Sum();
-    List<int> countersCounts = new();
-
-    private void onAddButtonClickHandler()
-    {
-        countersCounts.Add(0);
-    }
-
-    private void onCountersCountChangedHandler(int index, int newCount)
-    {
-        countersCounts[index] = newCount;
-    }
-}

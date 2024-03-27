@@ -1,14 +1,19 @@
 ﻿namespace MeatyBlazor.Tests.Components;
 
 using MeatyBlazor.Components;
+using MeatyBlazor.Services;
+
+using Microsoft.Extensions.DependencyInjection;
 
 public class CounterListTests : TestContext
 {
     [Fact]
     public void CounterList_RendersOk_IsEmpty_ByDefault()
     {
-        // Arrange
-        var cut = RenderComponent<CounterList>();
+		// Arrange
+		Services.AddSingleton<SharedStateService>();
+
+		var cut = RenderComponent<CounterList>();
 
         // Assert
         var counterListElement = cut.Find(".counterlist ul");
@@ -19,8 +24,10 @@ public class CounterListTests : TestContext
     [Fact]
     public void CounterList_AddButton_AddsNewCounter_WhenClicked()
     {
-        // Arrange
-        var cut = RenderComponent<CounterList>();
+		// Arrange
+		Services.AddSingleton<SharedStateService>();
+
+		var cut = RenderComponent<CounterList>();
 
         // Act
         var buttonElement = cut.Find(".counterlist button");

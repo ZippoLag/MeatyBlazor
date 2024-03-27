@@ -8,10 +8,8 @@ This document will try and provide an outline (recipe?!) of what we'll be adding
 
 
 ## Changelog
-- Parameters & Data binding
-- Event Handling
-- Two-way binding (kind-of)
+- Basic Shared-State Management
 
 
 ## Next steps
-- Basic Shared-State Management
+- Demo IV
