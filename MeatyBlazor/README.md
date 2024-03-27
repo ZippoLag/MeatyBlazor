@@ -1,4 +1,4 @@
-# MeatyBlazor - Demo II - "_taste_ driven development"
+# MeatyBlazor - Demo III - "Sautéeing"
 
 Welcome to the repository for the "Blazor: Straight to the meat" webinar!
 
@@ -6,10 +6,12 @@ The purpose of this repo is merely giving an overview of a few core features of 
 
 This document will try and provide an outline (recipe?!) of what we'll be adding on the next commit, and a brief changelog of what was added on the previous.
 
+
 ## Changelog
-- CounterList: another TDD example
+- Parameters & Data binding
+- Event Handling
+- Two-way binding (kind-of)
 
 
 ## Next steps
-- Demo III
-
+- Basic Shared-State Management

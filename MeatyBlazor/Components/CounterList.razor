@@ -1,20 +1,28 @@
 ﻿<div class="counterlist">
     <button @onclick="onAddButtonClickHandler">+</button>
     <ul>
-        @for(int i=0; i<countersCount; i++)
+        @for(int index=0; index<countersCounts.Count(); index++)
         {
+            int indexCopy = index;
             <li>
-                <Counter></Counter>
+                <Counter Count="@countersCounts[index]" CountChanged="@((newCount) => onCountersCountChangedHandler(indexCopy, newCount))"></Counter>
             </li>
         }
     </ul>
+    <div>Total: @total</div>
 </div>
 
 @code{
-    int countersCount = 0;
+    int total => countersCounts.Sum();
+    List<int> countersCounts = new();
 
     private void onAddButtonClickHandler()
     {
-        countersCount++;
+        countersCounts.Add(0);
+    }
+
+    private void onCountersCountChangedHandler(int index, int newCount)
+    {
+        countersCounts[index] = newCount;
     }
 }

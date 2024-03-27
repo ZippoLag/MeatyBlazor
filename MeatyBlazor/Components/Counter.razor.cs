@@ -1,11 +1,19 @@
 ﻿namespace MeatyBlazor.Components;
 
+using Microsoft.AspNetCore.Components;
+
+
 public partial class Counter
 {
-    int count = 0;
+    [Parameter]
+    public int Count { get; set; }
+
+    [Parameter]
+    public EventCallback<int> CountChanged { get; set; }
 
     private void onButtonClickHandler()
     {
-        count++;
+        Count++;
+        CountChanged.InvokeAsync(Count);
     }
 }
