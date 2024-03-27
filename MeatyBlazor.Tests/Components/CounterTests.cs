@@ -21,7 +21,7 @@ public class CounterTests :TestContext
         var cut = RenderComponent<Counter>();
 
         // Act
-        var buttonElement = cut.Find("button");
+        var buttonElement = cut.Find(".counter-button");
         buttonElement.Click();
 
         // Assert
